@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+
+<body>
+<style>
+    .dangky{
+    width: 500px;
+    height: 500px;
+    background-color: cadetblue;
+    text-align: center;
+    margin: auto;
+}
+
+.username-input{
+   display: flex;
+   justify-content: center;
+   font-size:  25px;
+}
+
+.usern-label{
+    color: aliceblue;
+    margin-top: 50px;
+    margin-right: 5px;
+}
+
+.usern-input{
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.userm-label, .userp-label,.userpw-label,.usercpw-label{
+    color: aliceblue;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 25px;
+}
+.userm-input, .userp-input, .userpw-input,.usercpw-input{
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+}
+.username, .user-mail,.user-phone,.user-password,.user-confirmpw{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.register-btn{
+    font-size: 25px;
+    margin-top: 10px;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.register-btn:hover{
+    background-color: burlywood;
+}
+
+body{
+    background-color:rgb(56, 139, 139) ;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    background-color:rgb(106, 204, 204) ;
+}
+.nav ul{
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav ul li {
+    list-style: none;
+    font-size: 35px;
+    margin: 10px 5px;
+    color: black;
+    font-weight: 600;
+    font-family: sans-serif;
+    float: left;
+}
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav ul input{
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+    height: 60px;
+    width: 500px;
+    background-color: whitesmoke;
+}
+.logo{
+    width: 90px;
+}
+</style>
+    <div class="nav">
+        <ul>
+            
+            <li><a href="">FIGURE SHOP</a></li>
+            <li><img src="img/images.png" alt="" class="logo"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="abou.html">About 1/6</a></li>
+            <li><a href="index.html">Product</a></li>
+            <li><a href="signin.html">Sign in</a></li>
+        <input type="text" placeholder="Tìm kiếm">
+        </ul>
+    </div>
+    <div class="dangky">
+        <form action="index.html">
+            <div class="username-input">
+                <label for="username" class="usern-label">Username:</label>
+                <input type="text" placeholder="Username..." class="usern-input">
+            </div>
+            <div class="user-mail">
+                <label for="email" class="userm-label">Email:</label>
+                <input type="email" placeholder="Email..." class="userm-input">
+            </div>
+            <div class="user-phone">
+                <label for="phone" class="userp-label">Phone:</label>
+                <input type="number" placeholder="Phone..." class="userp-input">
+            </div>
+            <div class="user-password">
+                <label for="password" class="userpw-label">Password:</label>
+                <input type="password" placeholder="Password" class="userpw-input">
+            </div>
+            <div class="user-confirmpw">
+                <label for="confirm-pw" class="usercpw-label">Confirm password:</label>
+                <input type="password" placeholder="Confirm....." class="usercpw-input">
+            </div>
+            <div class="register-submit">
+                <button class="register-btn" onclick="return validateRegisterform()">Register</button>
+            </div>
+           
+           
+        </form>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
